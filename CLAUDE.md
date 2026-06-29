@@ -61,12 +61,19 @@ mache ich automatisch, sag mir einfach Bescheid.
 - `assets/images/` — alle Bilder.
 - `assets/js/` — Technik für Animationen/Menü (nicht anfassen).
 
-## Schriftarten (wichtig!)
+## Schriftarten
 
-Die Schriften (futura-pt, gill-sans-nova, courier-std) kommen von **Adobe Fonts
-(Typekit)**. Damit sie auf der neuen Internet-Adresse korrekt angezeigt werden,
-muss die neue Domain einmalig im Adobe-Fonts-Konto freigeschaltet werden. Das ist
-ein einmaliger Schritt beim Umzug — frag mich, ich erkläre genau wie.
+Die Schriften liegen jetzt **lokal auf der Seite selbst** (selbst gehostet,
+`assets/fonts/` + `assets/css/fonts.css`) — es gibt **keine Abhängigkeit von Adobe
+Fonts / Typekit mehr**. Dadurch werden sie auf jeder Internet-Adresse korrekt
+angezeigt, ohne dass irgendwo eine Domain freigeschaltet werden muss.
+
+Verwendet werden frei lizenzierte Ersatzschriften für die ursprünglichen
+Webflow/Adobe-Schriften:
+
+- **Montserrat** statt gill-sans-nova (Fließtext, Überschriften, Titel)
+- **Jost** statt futura-pt (Buttons)
+- **Courier Prime** statt courier-std (Zitate)
 
 ## Videos
 
@@ -102,5 +109,7 @@ in der Vorschau.“
   einfachsten: gleicher Dateiname → Datei in `assets/images/` ersetzen).
 - `style.css` ist generiertes Webflow-CSS mit kryptischen Klassennamen — mit Vorsicht
   bearbeiten; für reine Inhalts-/Bildänderungen nicht nötig.
-- Externe Links (Spotify, Amazon, Emons, Tapete, Dussmann, Vimeo, Typekit) bleiben
+- Externe Links (Spotify, Amazon, Emons, Tapete, Dussmann, Vimeo) bleiben
   extern und sind beabsichtigt.
+- Schriften sind selbst gehostet (`assets/css/fonts.css`, `assets/fonts/`). Kein
+  Typekit/Adobe-Loader mehr — beim Bearbeiten keine Adobe-CDN-URLs wieder einfügen.
