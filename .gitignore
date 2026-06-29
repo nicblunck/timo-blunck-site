@@ -4,3 +4,6 @@
 # Editor / local
 *.log
 .claude/settings.local.json
+
+# Local dev scratch (design audit, font preview) — not for the live site
+dev/
