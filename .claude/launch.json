@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/Users/nicolasblunck/Documents/Github/Timo Blunck Site/.claude/serve.py"],
+      "port": 4321
+    }
+  ]
+}
