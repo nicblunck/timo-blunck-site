@@ -2361,6 +2361,13 @@ a {
   background-image: url("../images/978-3-7408-2426-6_Original.jpg");
 }
 
+.landing-recent-image-container.neonbaby {
+  background-image: url("../images/978-3-7408-2902-5_Original_RGB.jpg");
+  aspect-ratio: 1358 / 2244;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 .landing-title-copy {
   z-index: 2;
   color: #000;
@@ -2384,11 +2391,15 @@ a {
   letter-spacing: .1em;
   text-transform: uppercase;
   width: 100%;
-  margin-top: -60px;
+  margin-top: 20px;
   font-size: 96px;
   font-weight: 300;
   line-height: 1em;
   position: relative;
+}
+
+.landing-title-smaller.ekluds {
+  font-size: 63px;
 }
 
 .regular-text-block {
@@ -3727,7 +3738,7 @@ a {
   }
 
   .landing-title-smaller.music {
-    margin-top: -30px;
+    margin-top: 20px;
     font-size: 4em;
   }
 
@@ -3919,13 +3930,17 @@ a {
   }
 
   .landing-title-smaller {
-    margin-top: -30px;
+    margin-top: 20px;
     font-size: 3.5em;
   }
 
   .landing-title-smaller.music {
-    margin-top: -30px;
+    margin-top: 20px;
     font-size: 4em;
+  }
+
+  .landing-title-smaller.ekluds {
+    font-size: 2.31em;
   }
 
   .regular-text-block {
@@ -4211,13 +4226,17 @@ a {
   }
 
   .landing-title-smaller {
-    margin-top: -20px;
+    margin-top: 20px;
     font-size: 42px;
   }
 
   .landing-title-smaller.music {
-    margin-top: -20px;
+    margin-top: 20px;
     font-size: 3em;
+  }
+
+  .landing-title-smaller.ekluds {
+    font-size: 28px;
   }
 
   .regular-text-block {

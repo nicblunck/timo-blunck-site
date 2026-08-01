@@ -4,7 +4,7 @@
     {
       "name": "site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["/Users/nicolasblunck/Documents/Github/Timo Blunck Site/.claude/serve.py"],
+      "runtimeArgs": [".claude/serve.py"],
       "port": 4321
     }
   ]
