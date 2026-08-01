@@ -84,10 +84,28 @@ auszutauschen, brauche ich nur den neuen Vimeo-Link.
 
 ## Veröffentlichen (Hosting)
 
-> Dieser Abschnitt wird ausgefüllt, sobald das Hosting eingerichtet ist
-> (geplant: Cloudflare Pages oder Netlify mit automatischer Veröffentlichung).
-> Danach gilt: Sobald eine Änderung gespeichert ist, geht sie automatisch in
-> ~30 Sekunden online. Genaue Schritte folgen hier.
+Die Seite liegt auf **GitHub** (`nicblunck/timo-blunck-site`) und wird über
+**Vercel** gehostet. Vercel ist mit dem GitHub-Repo verbunden: Jeder `git push`
+auf den `main`-Branch löst automatisch eine neue Veröffentlichung aus (meist
+innerhalb von ~30 Sekunden online).
+
+Das heißt für Claude: Nach einer Änderung reicht `git add` + `git commit` +
+`git push`, damit die Änderung live geht — kein separater Deploy-Schritt nötig.
+
+### Wenn Timo selbst mit eigenem Claude arbeitet
+
+Timo kann diese Seite auch von seinem eigenen Rechner mit seinem eigenen Claude
+Code bearbeiten (statt Änderungen über Nicolas laufen zu lassen). Voraussetzung:
+
+1. Ein GitHub-Account für Timo mit Schreibrechten (Collaborator) auf
+   `nicblunck/timo-blunck-site`.
+2. Claude Code auf seinem Rechner installiert und mit einem lokalen Klon des
+   Repos verbunden.
+
+Diese `CLAUDE.md` liegt im Repo und gilt dann automatisch auch für sein Claude —
+er kann genau wie Nicolas in normalen Worten sagen, was geändert werden soll,
+und danach „Bitte veröffentliche die Änderungen" sagen. Claude committet und
+pusht direkt auf `main`; es gibt keinen Review-Zwischenschritt.
 
 ## Vorschau auf dem eigenen Rechner
 
