@@ -2363,8 +2363,7 @@ a {
 
 .landing-recent-image-container.neonbaby {
   background-image: url("../images/978-3-7408-2902-5_Original_RGB.jpg");
-  aspect-ratio: 1358 / 2244;
-  width: auto;
+  width: 366px;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -3929,6 +3928,10 @@ a {
     height: 420px;
   }
 
+  .landing-recent-image-container.neonbaby {
+    width: 254px;
+  }
+
   .landing-title-smaller {
     margin-top: 20px;
     font-size: 3.5em;
@@ -4213,6 +4216,10 @@ a {
   .landing-recent-image-container {
     width: 100%;
     height: 300px;
+  }
+
+  .landing-recent-image-container.neonbaby {
+    width: 182px;
   }
 
   .landing-recent-image-container.music {
