@@ -94,7 +94,7 @@ a{color:inherit}
 .shop:hover{background:var(--raised)}
 .shop__logo{display:block;width:auto;height:20px;max-width:100%;margin:2px 0 6px}
 .shop__logo--amazon{height:22px;margin-top:6px;margin-bottom:2px}
-.shop__logo--hugendubel{height:15px}
+.shop__logo--thalia{height:19px}
 .shop__logo--genialokal{height:22px}
 .shop__logo--emons{height:16px}
 
@@ -290,7 +290,7 @@ footer nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bo
         <p class="shops__label">oder kaufen bei</p>
         <div class="shops">
           <a class="shop" data-shop="amazon" target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><img class="shop__logo shop__logo--amazon" src="/assets/images/neonbaby/logos/amazon.svg" alt="Amazon" width="120" height="24"><small data-sub>Kindle</small></a>
-          <a class="shop" data-shop="hugendubel" target="_blank" rel="noopener" href="https://www.hugendubel.de/de/search?q=9783987074141"><img class="shop__logo shop__logo--hugendubel" src="/assets/images/neonbaby/logos/hugendubel.svg" alt="Hugendubel" width="120" height="24"><small data-sub>Tolino</small></a>
+          <a class="shop" data-shop="thalia" target="_blank" rel="noopener" href="https://www.thalia.de/shop/home/artikeldetails/A1079287779"><img class="shop__logo shop__logo--thalia" src="/assets/images/neonbaby/logos/thalia.svg" alt="Thalia" width="120" height="24"><small data-sub>Tolino</small></a>
           <a class="shop" data-shop="genialokal" target="_blank" rel="noopener" href="https://www.genialokal.de/Produkt/Timo-Blunck/Neon-Baby_lid_58415760.html"><img class="shop__logo shop__logo--genialokal" src="/assets/images/neonbaby/logos/genialokal.svg" alt="genialokal" width="120" height="24"><small>Buchhandlung</small></a>
           <a class="shop" data-shop="emons" target="_blank" rel="noopener" href="https://emons-verlag.de/p/neon-baby-7878"><img class="shop__logo shop__logo--emons" src="/assets/images/neonbaby/logos/emons.svg" alt="Emons Verlag" width="120" height="24"><small>Verlag</small></a>
         </div>
@@ -649,7 +649,7 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
       <p class="shops__label">oder kaufen bei</p>
       <div class="shops">
         <a class="shop" data-shop="amazon" target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><img class="shop__logo shop__logo--amazon" src="/assets/images/neonbaby/logos/amazon.svg" alt="Amazon" width="120" height="24"><small data-sub>Kindle</small></a>
-        <a class="shop" data-shop="hugendubel" target="_blank" rel="noopener" href="https://www.hugendubel.de/de/search?q=9783987074141"><img class="shop__logo shop__logo--hugendubel" src="/assets/images/neonbaby/logos/hugendubel.svg" alt="Hugendubel" width="120" height="24"><small data-sub>Tolino</small></a>
+        <a class="shop" data-shop="thalia" target="_blank" rel="noopener" href="https://www.thalia.de/shop/home/artikeldetails/A1079287779"><img class="shop__logo shop__logo--thalia" src="/assets/images/neonbaby/logos/thalia.svg" alt="Thalia" width="120" height="24"><small data-sub>Tolino</small></a>
         <a class="shop" data-shop="genialokal" target="_blank" rel="noopener" href="https://www.genialokal.de/Produkt/Timo-Blunck/Neon-Baby_lid_58415760.html"><img class="shop__logo shop__logo--genialokal" src="/assets/images/neonbaby/logos/genialokal.svg" alt="genialokal" width="120" height="24"><small>Buchhandlung</small></a>
         <a class="shop" data-shop="emons" target="_blank" rel="noopener" href="https://emons-verlag.de/p/neon-baby-7878"><img class="shop__logo shop__logo--emons" src="/assets/images/neonbaby/logos/emons.svg" alt="Emons Verlag" width="120" height="24"><small>Verlag</small></a>
       </div>
@@ -773,10 +773,10 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
   }
 
   var LINKS = {
-    ebook:{amazon:"https://www.amazon.de/dp/B0GX2Z6HXD",hugendubel:"https://www.hugendubel.de/de/search?q=9783987074141",genialokal:"https://www.genialokal.de/Produkt/Timo-Blunck/Neon-Baby_lid_58415760.html",emons:"https://emons-verlag.de/p/neon-baby-7878"},
-    print:{amazon:"https://www.amazon.de/dp/3740829028",hugendubel:"https://www.hugendubel.de/de/search?q=9783740829025",genialokal:"https://www.genialokal.de/Produkt/Timo-Blunck/Neon-Baby_lid_58283689.html",emons:"https://emons-verlag.de/p/neon-baby-7878"}
+    ebook:{amazon:"https://www.amazon.de/dp/B0GX2Z6HXD",thalia:"https://www.thalia.de/shop/home/artikeldetails/A1079287779",genialokal:"https://www.genialokal.de/Produkt/Timo-Blunck/Neon-Baby_lid_58415760.html",emons:"https://emons-verlag.de/p/neon-baby-7878"},
+    print:{amazon:"https://www.amazon.de/dp/3740829028",thalia:"https://www.thalia.de/shop/home/artikeldetails/A1078892711",genialokal:"https://www.genialokal.de/Produkt/Timo-Blunck/Neon-Baby_lid_58283689.html",emons:"https://emons-verlag.de/p/neon-baby-7878"}
   };
-  var SUB = {ebook:{amazon:"Kindle",hugendubel:"Tolino"},print:{amazon:"Taschenbuch",hugendubel:"Taschenbuch"}};
+  var SUB = {ebook:{amazon:"Kindle",thalia:"Tolino"},print:{amazon:"Taschenbuch",thalia:"Taschenbuch"}};
   var ebookPrice = promo ? "4,99 €" : "13,99 €";
 
   function setFormat(box, fmt){
