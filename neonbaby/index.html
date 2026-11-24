@@ -2,16 +2,16 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>Neon Baby – Timo Blunck | E-Book nur 4,99 € bis 31. Dezember</title>
+<title>Neon Baby – der neue Thriller von Timo Blunck</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="»Neon Baby« – der neue Noir-Thriller von Timo Blunck. Ein Club der Superreichen. Ein Jagdrevier. Kein Entkommen. Das E-Book nur bis 31. Dezember für 4,99 €.">
+<meta name="description" content="»Neon Baby« – der neue Noir-Thriller von Timo Blunck. Ein Club der Superreichen. Ein Jagdrevier. Kein Entkommen. Jetzt als E-Book und Taschenbuch.">
 <meta name="theme-color" content="#F7EFE4">
 <link rel="canonical" href="https://www.timoblunck.com/neonbaby">
 <meta property="og:type" content="book">
 <meta property="og:title" content="Neon Baby – der neue Thriller von Timo Blunck">
-<meta property="og:description" content="Ein Club der Superreichen. Ein Jagdrevier. Kein Entkommen. E-Book nur bis 31.12. für 4,99 €.">
+<meta property="og:description" content="Ein Club der Superreichen. Ein Jagdrevier. Kein Entkommen. Jetzt als E-Book und Taschenbuch.">
 <meta property="og:url" content="https://www.timoblunck.com/neonbaby">
-<meta property="og:image" content="https://www.timoblunck.com/assets/images/neonbaby/neon-baby-og.jpg">
+<meta property="og:image" content="https://www.timoblunck.com/assets/images/neonbaby/neon-baby-og-2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="de_DE">
@@ -43,6 +43,8 @@
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
+body.promo-off .is-promo{display:none!important}
+body:not(.promo-off) .no-promo{display:none!important}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--page);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
 img,svg{display:block;max-width:100%}
@@ -60,7 +62,8 @@ a{color:inherit}
 /* hero */
 .hero{padding:var(--s4) 0 var(--s7)}
 .hero__grid{display:grid;grid-template-columns:1fr;gap:var(--s4);align-items:center}
-.hero__copy{text-align:center;animation:enter .45s var(--ease) .1s both}
+.hero__copy{text-align:center;animation:rise .45s var(--ease) .1s both}
+@keyframes rise{from{transform:translateY(8px)}to{transform:none}}
 @keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .hero .nb-author,.hero .nb-title{display:none}
 .nb-author{width:168px;margin:0 0 8px}
@@ -265,9 +268,9 @@ footer nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bo
 }
 </style>
 </head>
-<body>
+<body class="promo-off">
 
-<div class="promo is-promo" role="note"><span class="promo__long">Nur bis 31. Dezember: </span><b>E-Book für 4,99 €</b><span class="promo__short"> · bis 31.12.</span> <span class="promo__left"></span></div>
+<div class="promo is-promo" role="note"><span class="promo__long">Nur bis 31. Dezember: </span><b>Kindle-E-Book für 4,99 €</b> bei Amazon<span class="promo__short"> · bis 31.12.</span> <span class="promo__left"></span></div>
 
 <header class="hero">
   <div class="wrap hero__grid">
@@ -278,16 +281,16 @@ footer nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bo
 
       <div class="buy" id="kaufen" data-buy>
         <div class="fmt" role="group" aria-label="Format wählen">
-          <button type="button" data-fmt="ebook" aria-pressed="true">E-Book<small class="is-promo">4,99 € statt 13,99 €</small><small class="no-promo" hidden>13,99 €</small></button>
+          <button type="button" data-fmt="ebook" aria-pressed="true">E-Book<small class="is-promo">4,99 € statt 13,99 €</small><small class="no-promo">13,99 €</small></button>
           <button type="button" data-fmt="print" aria-pressed="false">Taschenbuch<small>18,00 € · 416 Seiten</small></button>
         </div>
         <div class="price">
-          <span class="price__now" data-price>4,99 €</span>
+          <span class="price__now" data-price>13,99 €</span>
           <span class="price__was is-promo" data-was>13,99 €</span>
         </div>
-        <p class="price__note" data-note><strong class="is-promo">Aktionspreis nur bis 31.12.</strong> Sofort lesen – Kindle, Tolino &amp; alle E-Reader.</p>
-        <a class="cta" data-main target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><span data-main-label>Jetzt für 4,99 € lesen</span></a>
-        <p class="shops__label">oder kaufen bei</p>
+        <p class="price__note" data-note>Sofort lesen – Kindle, Tolino &amp; alle E-Reader.</p>
+        <a class="cta" data-main target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><span data-main-label>Jetzt für 13,99 € lesen</span></a>
+        <p class="shops__label" data-shops-label>oder kaufen bei</p>
         <div class="shops">
           <a class="shop" data-shop="amazon" target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><img class="shop__logo shop__logo--amazon" src="/assets/images/neonbaby/logos/amazon.svg" alt="Amazon" width="120" height="24"><small data-sub>Kindle</small></a>
           <a class="shop" data-shop="thalia" target="_blank" rel="noopener" href="https://www.thalia.de/shop/home/artikeldetails/A1079287779"><img class="shop__logo shop__logo--thalia" src="/assets/images/neonbaby/logos/thalia.svg" alt="Thalia" width="120" height="24"><small data-sub>Tolino</small></a>
@@ -298,7 +301,7 @@ footer nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bo
     </div>
 
     <div class="stage">
-      <div class="sticker is-promo" aria-hidden="true"><div><span class="s1">E-Book</span><span class="s2">4,99&thinsp;€</span><span class="s3">bis 31.12.</span></div></div>
+      <div class="sticker is-promo" aria-hidden="true"><div><span class="s1">E-Book</span><span class="s2">4,99&thinsp;€</span><span class="s3">bei Amazon</span></div></div>
       <div class="book" id="book" role="button" tabindex="0" aria-label="Buch aufschlagen">
         <div class="book__back"></div>
         <div class="book__spine"><div class="spine__inner"><svg class="spine__author" viewBox="105 69 1131 377" aria-hidden="true"><g fill="#F7EFE4"><g class="a" transform="translate(0 0)"><g transform="translate(0.000000,2244.000000) scale(1.000000,-1.000000)"><path d="M489 2163 c-9 -2 -17 -6 -24 -13 -7 -7 -8 -10 -6 -13 3 -2 2 -3 -2
@@ -577,7 +580,7 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
         <li><span>Schauplätze</span><span>Hamburg, Lüneburger Heide, Berlin, Oaxaca</span></li>
         <li><span>Umfang</span><span>416 Seiten</span></li>
         <li><span>Verlag</span><span>Emons, 30.9.2026</span></li>
-        <li><span>E-Book</span><span><span class="is-promo">4,99 € bis 31.12.</span><span class="no-promo" hidden>13,99 €</span></span></li>
+        <li><span>E-Book</span><span><span class="is-promo">4,99 € bei Amazon bis 31.12.</span><span class="no-promo">13,99 €</span></span></li>
         <li><span>Taschenbuch</span><span>18,00 €</span></li>
       </ul>
       <p class="fans">Für Fans von <b>Squid Game</b>, <b>The Big Lebowski</b> und <b>Quentin Tarantino</b></p>
@@ -633,20 +636,20 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
 
 <section class="final" id="jetzt">
   <div class="wrap">
-    <h2>Sechs Monate. Sechs Leichen. 4,99&nbsp;€</h2>
-    <p class="sub is-promo" style="margin-inline:auto">Das E-Book gibt es nur bis 31. Dezember zum Aktionspreis.</p>
+    <h2><span class="is-promo">Sechs Monate. Sechs Leichen. 4,99&nbsp;€</span><span class="no-promo">Sechs Monate zu leben. Sechs Leichen am Deich</span></h2>
+    <p class="sub is-promo" style="margin-inline:auto">Das Kindle-E-Book gibt es bis 31. Dezember bei Amazon zum Aktionspreis.</p>
     <div class="buy" data-buy>
       <div class="fmt" role="group" aria-label="Format wählen">
-        <button type="button" data-fmt="ebook" aria-pressed="true">E-Book<small class="is-promo">4,99 € statt 13,99 €</small><small class="no-promo" hidden>13,99 €</small></button>
+        <button type="button" data-fmt="ebook" aria-pressed="true">E-Book<small class="is-promo">4,99 € statt 13,99 €</small><small class="no-promo">13,99 €</small></button>
         <button type="button" data-fmt="print" aria-pressed="false">Taschenbuch<small>18,00 € · 416 Seiten</small></button>
       </div>
       <div class="price">
-        <span class="price__now" data-price>4,99 €</span>
+        <span class="price__now" data-price>13,99 €</span>
         <span class="price__was is-promo" data-was>13,99 €</span>
       </div>
-      <p class="price__note" data-note><strong class="is-promo">Aktionspreis nur bis 31.12.</strong> Sofort lesen – Kindle, Tolino &amp; alle E-Reader.</p>
-      <a class="cta" data-main target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><span data-main-label>Jetzt für 4,99 € lesen</span></a>
-      <p class="shops__label">oder kaufen bei</p>
+      <p class="price__note" data-note>Sofort lesen – Kindle, Tolino &amp; alle E-Reader.</p>
+      <a class="cta" data-main target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><span data-main-label>Jetzt für 13,99 € lesen</span></a>
+      <p class="shops__label" data-shops-label>oder kaufen bei</p>
       <div class="shops">
         <a class="shop" data-shop="amazon" target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD"><img class="shop__logo shop__logo--amazon" src="/assets/images/neonbaby/logos/amazon.svg" alt="Amazon" width="120" height="24"><small data-sub>Kindle</small></a>
         <a class="shop" data-shop="thalia" target="_blank" rel="noopener" href="https://www.thalia.de/shop/home/artikeldetails/A1079287779"><img class="shop__logo shop__logo--thalia" src="/assets/images/neonbaby/logos/thalia.svg" alt="Thalia" width="120" height="24"><small data-sub>Tolino</small></a>
@@ -663,7 +666,7 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
 </footer>
 
 <div class="sticky" id="sticky" aria-hidden="true">
-  <div class="sticky__txt"><span class="is-promo">E-Book bis 31.12.</span><span class="no-promo" hidden>Neon Baby</span><b data-sticky-price>nur 4,99 €</b></div>
+  <div class="sticky__txt"><span class="is-promo">Kindle-E-Book bis 31.12.</span><span class="no-promo">Neon Baby</span><b data-sticky-price>E-Book 13,99 €</b></div>
   <a class="cta" href="#kaufen" tabindex="-1">Jetzt kaufen</a>
 </div>
 
@@ -671,9 +674,9 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
   <div class="reader__bar"><b>Leseprobe</b><button class="reader__close" type="button" data-close>Schließen ✕</button></div>
   <div class="reader__body" id="reader-body"></div>
   <div class="reader__end">
-    <p>Wie geht’s weiter? <span class="is-promo">Jetzt das E-Book für 4,99 € holen.</span></p>
+    <p>Wie geht’s weiter? <span class="is-promo">Das Kindle-E-Book gibt’s bis 31.12. bei Amazon für 4,99 €.</span><span class="no-promo">Jetzt als E-Book oder Taschenbuch weiterlesen.</span></p>
     <a class="cta" target="_blank" rel="noopener" href="https://www.amazon.de/dp/B0GX2Z6HXD">Weiterlesen bei Amazon</a>
-    <p class="alt"><a href="#jetzt" data-close>Andere Shops &amp; Taschenbuch</a></p>
+    <p class="alt"><a href="#jetzt" data-close>Taschenbuch bei anderen Shops</a></p>
   </div>
 </dialog>
 
@@ -760,13 +763,13 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
 <script>
 (function(){
   // ---- Aktion: E-Book 4,99 € bis einschließlich 31.12.2026 (Berliner Zeit) ----
+  // >>> AKTION AN/AUS: true = 4,99-€-Aktion bei Amazon wird angezeigt, false = normale Preise <<<
+  var PROMO_ACTIVE = false;
   var PROMO_END = new Date("2027-01-01T00:00:00+01:00");
   var now = new Date();
-  var promo = now < PROMO_END;
-  if(!promo){
-    document.body.classList.add("promo-off");
-    document.querySelectorAll(".no-promo").forEach(function(el){el.hidden=false});
-  } else {
+  var promo = PROMO_ACTIVE && now < PROMO_END;
+  if(promo){
+    document.body.classList.remove("promo-off");
     var days = Math.ceil((PROMO_END - now)/864e5);
     var left = document.querySelector(".promo__left");
     if(left && days <= 31) left.textContent = days <= 1 ? "· letzter Tag!" : "· noch " + days + " Tage";
@@ -785,21 +788,24 @@ c12 8 23 15 23 15 0 -1 0 -2 -1 -4 -1 -5 -4 -27 -3 -28 0 -1 5 5 21 26 7 10
     box.querySelector("[data-price]").textContent = isE ? ebookPrice : "18,00 €";
     box.querySelectorAll("[data-was],[data-tag]").forEach(function(el){el.style.display = (isE && promo) ? "" : "none"});
     box.querySelector("[data-note]").innerHTML = isE
-      ? (promo ? "<strong>Aktionspreis nur bis 31.12.</strong> " : "") + "Sofort lesen – Kindle, Tolino &amp; alle E-Reader."
+      ? (promo ? "<strong>Aktionspreis bei Amazon bis 31.12.</strong> Sofort lesen auf dem Kindle oder in der kostenlosen Kindle-App." : "Sofort lesen – Kindle, Tolino &amp; alle E-Reader.")
       : "Broschur, 416 Seiten, 11,5 × 19 cm.";
     var main = box.querySelector("[data-main]");
     main.href = LINKS[fmt].amazon;
     box.querySelector("[data-main-label]").textContent = isE ? "Jetzt für " + ebookPrice + " lesen" : "Taschenbuch bestellen";
+    // Während der Aktion führen die Shop-Buttons zum Taschenbuch (E-Book-Aktion läuft über Amazon, großer Button)
     box.querySelectorAll("[data-shop]").forEach(function(a){
-      a.href = LINKS[fmt][a.dataset.shop];
-      var s = a.querySelector("[data-sub]"); if(s && SUB[fmt][a.dataset.shop]) s.textContent = SUB[fmt][a.dataset.shop];
+      var f = promo ? "print" : fmt;
+      a.href = LINKS[f][a.dataset.shop];
+      var s = a.querySelector("[data-sub]"); if(s && SUB[f][a.dataset.shop]) s.textContent = SUB[f][a.dataset.shop];
     });
+    var lbl = box.querySelector("[data-shops-label]"); if(lbl) lbl.textContent = (promo && isE) ? "Taschenbuch (18,00 €) bestellen bei" : "oder kaufen bei";
   }
   document.querySelectorAll("[data-buy]").forEach(function(box){
     box.querySelectorAll("[data-fmt]").forEach(function(b){ b.addEventListener("click", function(){ setFormat(box, b.dataset.fmt) }) });
     setFormat(box, "ebook");
   });
-  if(!promo){ var sp=document.querySelector("[data-sticky-price]"); if(sp) sp.textContent="E-Book 13,99 €"; }
+  if(promo){ var sp=document.querySelector("[data-sticky-price]"); if(sp) sp.textContent="nur 4,99 €"; }
 
   // ---- Buch: öffnet sich beim Laden einmal, danach per Klick/Tap ----
   var book = document.getElementById("book");
