@@ -52,6 +52,63 @@ Die Navigation (Menü oben) ist auf jeder Seite gleich. Wenn eine Seite umbenann
 oder hinzugefügt wird, muss das Menü auf **allen** Seiten angepasst werden — das
 mache ich automatisch, sag mir einfach Bescheid.
 
+Zusätzlich gibt es eine **eigenständige Landingpage** (ohne Menü, gehört nicht ins
+Navigationsmenü): `neonbaby/index.html` → **www.timoblunck.com/neonbaby**. Details
+im Abschnitt *Neon-Baby-Landingpage* unten.
+
+---
+
+## Neon-Baby-Landingpage (`/neonbaby`)
+
+Verkaufsseite für »Neon Baby«, verlinkt aus Instagram/Social Media. Alles steckt in
+**einer Datei**: `neonbaby/index.html` (CSS und JavaScript stehen mit darin).
+Bilder liegen in `assets/images/neonbaby/`. Änderungen direkt in dieser Datei machen.
+
+### Für Timo: Aktion (z. B. E-Book 4,99 €) wieder einschalten
+
+Sag einfach z. B.: **„Schalte die 4,99-€-Aktion wieder ein: bei Amazon, bis 31. Dezember.“**
+Wichtig sind drei Angaben: **Preis**, **in welchen Shops**, **bis wann**.
+
+### Hinweise für Claude: Aktion an/aus
+
+- Schalter im Script ganz unten: `var PROMO_ACTIVE = false;` → `true` schaltet die
+  Aktion ein. `PROMO_END` ist der Moment, ab dem sie automatisch wieder aus ist
+  (aktuell `2027-01-01T00:00:00+01:00` = Ende 31.12.2026). Preise im Script:
+  `ebookPrice` (Aktionspreis / Normalpreis 13,99 €).
+- Ohne Aktion hat `<body>` die Klasse `promo-off`: Alles mit Klasse `is-promo`
+  (Hinweisleiste, Preis-Sticker, durchgestrichener Preis, „bis 31.12.“) ist
+  versteckt, Elemente mit `no-promo` sind sichtbar. Das Script entfernt `promo-off`,
+  wenn die Aktion läuft.
+- Vor dem Einschalten **in den Shops prüfen**, ob der Preis dort wirklich angezeigt
+  wird (Amazon Kindle `B0GX2Z6HXD`, Thalia, genialokal, Emons). Nichts versprechen,
+  was die Shops nicht zeigen.
+- Gilt die Aktion **nur bei Amazon**: Texte sagen „bei Amazon“, der große Button
+  führt zum Kindle-E-Book, die Shop-Buttons darunter zum **Taschenbuch** (so ist es
+  im Script schon vorgesehen, solange `PROMO_ACTIVE` an ist). Gilt sie überall,
+  die „bei Amazon“-Texte (Hinweisleiste, Preisnotiz, Sticker, Faktenkasten,
+  Schlussabschnitt, Leseprobe-Ende) anpassen und Shop-Buttons dem Format folgen lassen.
+- Vorschaubild für Social Media (`og:image` im `<head>`):
+  `neon-baby-og.jpg` = mit „E-Book nur 4,99 €“, `neon-baby-og-2.jpg` = ohne Preis.
+  Bei Aktion an das Bild mit Preis eintragen, bei Aktion aus das ohne. Auch
+  `<title>` und die Beschreibungen im `<head>` passend mit/ohne Preis formulieren.
+- Danach in der Vorschau prüfen, dass kein falscher Preis sichtbar ist, dann
+  veröffentlichen und die Live-Seite kontrollieren.
+
+### Weitere Hinweise für Claude
+
+- Leseproben (vier „kleine Bücher“) stehen als `<template id="s1|s3|s4|s5">` in der
+  Datei; Text aus der **finalen Druck-PDF**
+  (`~/Desktop/NEON BABY/260805_Blunck_Neon Baby_115x190_an Autor_zurück an Verlag_ver3.pdf`),
+  nicht aus älteren Word-Manuskripten.
+- Die Buchtitel auf den kleinen Büchern sind **Vektorgrafiken** aus der Coverschrift
+  *Mission Sinister* (Rian Hughes/Device, nur Desktop-Lizenz). Die Schriftdatei darf
+  **nicht** auf die Website hochgeladen werden. Neue Titel: lokal mit fontTools aus
+  `~/Library/Fonts/MissionSinister.otf` in SVG-Pfade umwandeln.
+- Cover-Lettering, Pfeil und Buchrücken-Schrift sind aus dem Original-Cover
+  nachgezeichnete SVGs. Das Buch ist ein **Taschenbuch mit schwarzem Rücken**.
+- Shop-Logos liegen in `assets/images/neonbaby/logos/` (von den Shop-Websites).
+  Hugendubel wurde durch Thalia ersetzt, weil die Hugendubel-Website gestört war.
+
 ## Wo was liegt (für Neugierige)
 
 - `*.html` — die einzelnen Seiten. Der sichtbare Text steht direkt im HTML.
