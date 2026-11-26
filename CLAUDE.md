@@ -64,6 +64,16 @@ Verkaufsseite für »Neon Baby«, verlinkt aus Instagram/Social Media. Alles ste
 **einer Datei**: `neonbaby/index.html` (CSS und JavaScript stehen mit darin).
 Bilder liegen in `assets/images/neonbaby/`. Änderungen direkt in dieser Datei machen.
 
+### Schwebender Hinweis auf Startseite und Bücher-Seite
+
+`index.html` und `bucher.html` zeigen unten rechts (auf dem Handy unten über die
+ganze Breite) einen schwebenden Hinweis „Der neue Thriller · Neon Baby → Zur
+Buchseite“, der zu `/neonbaby` führt. Mit × lässt er sich wegklicken (bleibt dann
+bis zum Schließen des Browsers weg). Aussehen: `assets/css/neonbaby-float.css`.
+Markup + kleines Script stehen jeweils direkt vor `</body>` (Kommentar
+`<!-- Neon Baby floating link -->`). Zum Entfernen: diesen Block und die
+`<link>`-Zeile zu `neonbaby-float.css` im `<head>` beider Seiten löschen.
+
 ### Für Timo: Aktion (z. B. E-Book 4,99 €) wieder einschalten
 
 Sag einfach z. B.: **„Schalte die 4,99-€-Aktion wieder ein: bei Amazon, bis 31. Dezember.“**
