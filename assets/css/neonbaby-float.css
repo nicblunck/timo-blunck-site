@@ -29,6 +29,15 @@
 }
 .nb-float__close:hover{color:#fff;background:rgba(255,255,255,.08)}
 .nb-float__link:focus-visible,.nb-float__close:focus-visible{outline:2px solid #efe9de;outline-offset:2px;border-radius:6px}
+@media (min-width:480px){
+  .nb-float{right:28px;bottom:28px;padding:12px 48px 12px 12px;border-radius:16px}
+  .nb-float__link{gap:16px}
+  .nb-float__cover{width:60px;height:99px;border-radius:4px}
+  .nb-float__kicker{font-size:12px}
+  .nb-float__title{font-size:22px}
+  .nb-float__cta{font-size:15px;margin-top:4px}
+  .nb-float__close{top:8px;right:8px;width:32px;height:32px;font-size:20px}
+}
 @media (max-width:479px){
   .nb-float{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom))}
 }
